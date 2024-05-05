@@ -1,0 +1,35 @@
+{
+  "name": "hyzblog",
+  "version": "0.0.1",
+  "description": "A static site based on dumi",
+  "scripts": {
+    "init": "pnpm install",
+    "start": "npm run dev",
+    "dev": "dumi dev",
+    "build": "dumi build",
+    "preview": "dumi preview",
+    "prepare": "husky install && dumi setup"
+  },
+  "authors": [
+    "hyz"
+  ],
+  "license": "MIT",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "dumi": "^2.2.17",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5"
+  }
+}
