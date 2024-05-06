@@ -8,7 +8,8 @@
     "dev": "dumi dev",
     "build": "dumi build",
     "preview": "dumi preview",
-    "prepare": "husky install && dumi setup"
+    "prepare": "husky install && dumi setup",
+    "deploy": "gh-pages -d dist"
   },
   "authors": [
     "hyz"
@@ -28,6 +29,7 @@
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "dumi": "^2.2.17",
+    "gh-pages": "^6.1.1",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5"
